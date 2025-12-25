@@ -1,0 +1,40 @@
+{
+  "name": "google-scholar-mcp",
+  "version": "1.0.0",
+  "description": "A Model Context Protocol server for Google Scholar academic search",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "test": "vitest --run",
+    "test:watch": "vitest",
+    "test:pbt": "vitest --run --reporter=verbose src/**/*.pbt.test.ts",
+    "clean": "rm -rf dist",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "google-scholar",
+    "academic",
+    "search",
+    "research"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "fast-check": "^3.15.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "open": "^11.0.0",
+    "puppeteer": "^24.34.0"
+  }
+}

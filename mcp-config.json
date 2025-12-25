@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "google-scholar": {
+      "command": "node",
+      "args": ["dist/index.js"],
+      "cwd": ".",
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "disabled": false,
+      "autoApprove": ["search_scholar"]
+    }
+  }
+}

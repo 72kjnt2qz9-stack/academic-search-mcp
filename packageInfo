@@ -1,0 +1,2 @@
+base = {workspace = nlaunch_googlescholarmcp; };
+packages = { };
